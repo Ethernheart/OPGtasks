@@ -1,13 +1,26 @@
 ﻿using System;
 
-class Program
+namespace ConsoleApp2
 {
-    static void Main(string[] args)
+    class Program
     {
-        const double pi = 3.14;
-        double r = Convert.ToDouble(Console.ReadLine());
-        double p = pi * r*r;
-        Console.WriteLine(p);
-        
+        static void Main(string[] args)
+        {
+            double a, b, c, xmax;
+            a = Convert.ToDouble(Console.ReadLine());
+            b = Convert.ToDouble(Console.ReadLine());
+            c = Convert.ToDouble(Console.ReadLine());
+            xmax = a;
+            if (b > a)
+            {
+                xmax = b;
+            }
+            if (c > b) 
+            {
+                xmax = c;
+            }
+           
+            Console.WriteLine(xmax);
+        }
     }
 }
